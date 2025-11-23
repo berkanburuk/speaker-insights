@@ -1,0 +1,16 @@
+services:
+  postgres-test:
+    image: postgres:15
+    container_name: speaker-postgres-test
+    environment:
+      POSTGRES_DB: tedtalk_testdb
+    env_file:
+      - src/test/resources/postgres.env
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata-test:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  pgdata-test:
