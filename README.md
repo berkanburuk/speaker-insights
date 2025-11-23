@@ -1,6 +1,3 @@
-docker compose  -f docker-compose-dev.yaml up -d
-docker compose  -f docker-compose-test.yaml up -d
-
 # Speaker Insights
 
 **Speaker Insights** provides analytical insights into speaker influence for TedTalks and other conferences. The application calculates speaker influence scores based on conference views, likes, and dates, and exposes REST APIs to fetch influential speakers overall and by year.
