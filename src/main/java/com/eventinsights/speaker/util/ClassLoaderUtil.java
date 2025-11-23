@@ -11,7 +11,6 @@ public class ClassLoaderUtil {
 
     /**
      * Returns Path of a resource in src/main/resources or src/test/resources
-     * Usage: ClassLoaderUtil.getResource("conference-data.csv")
      */
     public static Path getPath(String resourcePath) throws URISyntaxException {
         URL resource = ClassLoaderUtil.class.getClassLoader().getResource(resourcePath);
